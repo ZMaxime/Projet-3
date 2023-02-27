@@ -1,0 +1,500 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** end reset css**/
+body {
+	max-width: 1140px;
+	margin:auto;
+	font-family: 'Work Sans' ;
+	font-size: 14px;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0
+}
+section {
+	margin: 50px 0
+}
+
+#h2_intro{
+	display: none;
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+;
+}
+
+h2:not(.exclure){
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+li:hover, a:hover {
+	color: #B1663C;
+}
+#introduction {
+	display: flex;
+	align-items: center;
+}
+#image_profil {
+	flex: 1
+}
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#introduction article {
+	flex: 1
+}
+#introduction h2 {
+	margin-bottom: 1em;
+}
+
+#introduction p {
+	margin-bottom: 0.5em;
+}
+#portfolio h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.projets_modifier {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#bloc_bouton_modifier_projets {
+	margin-left: 50px;
+	margin-bottom: 20px;
+	font-size: 1.5em;
+}
+
+.bouton_modifier_projets {
+	border: none;
+	background-color: white;
+	font-family: 'Work Sans' ;
+	cursor: pointer;
+}
+
+.gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.gallery img {
+	width: 100%;
+}
+#contact {
+	width: 50%;
+	margin: auto;
+}
+#contact > * {
+	text-align: center;
+
+}
+#contact h2{
+	margin-bottom: 20px;
+}
+#contact form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#contact label {
+	margin: 2em 0 1em 0;
+}
+
+#contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"]{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em
+}
+
+.filtres {
+	display: flex;
+	justify-content: space-between;
+	width: 55%;
+	margin-bottom: 30px;
+	margin-left: 20%;
+}
+
+.filtres button {
+	color: #1D6154;
+	font-size: 1.1em;
+	font-weight: 600;
+	border: 1px #1D6154 solid;
+	border-radius: 20px;
+	padding: 8px 15px 8px 15px;
+}
+
+.filtres button:focus {
+	background-color: #1D6154;
+	color: white;
+}
+
+/* Apparition / Disparition des parties d'édition de l'administrateur*/
+
+.hidden_edition {
+	display: none;
+  }
+
+/* Style de la page après connexion*/ 
+
+#bandeau_edition {
+	background-color: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+  }
+
+.mode_edition{
+	margin-left: 5px;
+}
+#publier_changements{
+	border-radius: 20px;
+	font-weight: 600;
+	padding: 8px 15px 8px 15px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+#modifier_image_profil{
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+/* Mise en page de la modale d'édition*/
+
+.modal, .modal_add{
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.titre_et_fermer{
+	display: flex;
+}
+
+.modal_wrapper{
+	overflow: auto;
+	background-color: white;
+	width: 760px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery_modal {
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 10px;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-bottom: gray solid 1px;
+	padding-bottom: 50px;
+}
+
+.gallery_modal figure{
+	width:90%
+}
+
+.gallery_modal img {
+	width: 100%;
+
+}
+
+.gallery_modal button{
+	cursor: pointer;
+	border-style: hidden;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	padding-top: 3px;
+	position: relative;
+	left: 80px;
+	top: 25px;
+}
+
+.modal_wrapper h2{
+	font-weight: 500;
+	font-size: 1.5em;
+	padding-bottom: 25px;
+	padding-top: 50px;
+	padding-left: 40%;
+}
+
+.modal_wrapper figcaption {
+	margin-left: 10px;
+	margin-top: 4px;
+}
+
+.modal1_vers_add, #ajout_photo.active{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	padding: 10px 15px 10px 15px;
+	border-style: hidden;
+	border-radius: 60px ;
+	cursor: pointer;
+}
+
+#ajout_photo:not(.active){
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #838b8a;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	padding: 10px 15px 10px 15px;
+	border-style: hidden;
+	border-radius: 60px ;
+}
+
+.close_modal:not(#close_add){
+	border-style: hidden;
+	background-color: white;
+	font-size: 1.8em;
+	margin-left: 280px;
+	margin-bottom:40px ;
+	cursor: pointer;
+}
+
+.suppression_gallery{
+	border: none;
+	background-color: white;
+	color: red;
+	padding-bottom: 50px;
+	cursor: pointer;
+}
+
+/* Définition du style pour la modale d'ajout de photo*/
+
+.modal_wrapper_ajout{
+	overflow: auto;
+	background-color: white;
+	width: 760px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+#close_add{
+	border-style: hidden;
+	background-color: white;
+	font-size: 1.8em;
+	margin-bottom:40px ;
+	cursor: pointer;
+}
+
+.back{
+	border-style: hidden;
+	background-color: white;
+	font-size: 1.7em;
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+.modal_wrapper_ajout h2 {
+	font-weight: 500;
+	font-size: 1.5em;
+	padding-bottom: 25px;
+	padding-top: 50px;
+	padding-left: 34%;
+	margin-right: 250px;
+}
+
+#upload_form{
+	display: flex;
+	width: 50%;
+	margin: auto;
+	flex-direction: column;
+	border-bottom: gray solid 1px;
+	padding-bottom: 50px;
+}
+
+.titre_et_fermer_ajout{
+	display: flex;
+
+}
+
+
+#img_and_spec{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#img_and_spec i{
+	font-size: 4em;
+	color:  #d8e4e2;
+}
+
+#img_and_spec p{
+	font-size: 0.7em;
+}
+
+#label_preview{
+	color: rgb(42, 60, 109);
+	background-color: #d8e4e2;
+	border-radius: 20px;
+	padding: 12px 30px 12px 30px;
+	margin: auto;
+	font-weight: 600;
+}
+
+#photo{
+	display: none;
+}
+
+#upload_form label{
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font-size: 1.1em;
+}
+
+#title_input, #category_select{
+	border: none;
+}
+
+#img_background{
+	background-color: rgba(118, 171, 240, 0.219);
+	height: 270px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+  	align-items: center;
+}
+
+#upload_form img{
+	max-height: 270px;
+	max-width: 210px;
+	position: absolute;
+	z-index: 1;
+}
+
+#upload_form input:not(#photo), #category_select {
+	height: 35px;
+	font-size: 1.2em;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
